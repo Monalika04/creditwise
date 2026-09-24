@@ -22,11 +22,9 @@ This is a portfolio / demonstration project.
 
 ---
 
----
-
 # 🖥️ Dashboard Screenshots
 
-The repository includes selected screenshots from the working CreditWise AI Streamlit application.
+Selected screenshots from the working CreditWise AI Streamlit application.
 
 ### Executive Dashboard
 
@@ -44,16 +42,19 @@ The repository includes selected screenshots from the working CreditWise AI Stre
 
 ![Model Intelligence](docs/screenshots/04_model_intelligence.png)
 
-### Applicant Explorer
+### Applicant Risk Explorer
 
-![Applicant Explorer](docs/screenshots/05_applicant_explorer.png)
+![Applicant Risk Explorer](docs/screenshots/05_applicant_explorer.png)
 
 > These are selected representative screenshots. Additional dashboard views are available when the Streamlit application is run locally.
 
+---
 
 # 🎯 Business Problem
 
-Credit applications contain information about income, employment, credit history, debt, utilization, and applicant characteristics. A lending analytics platform should help analysts answer questions such as:
+Credit applications contain information about income, employment, credit history, debt, utilization, and applicant characteristics.
+
+A lending analytics platform should help analysts answer questions such as:
 
 - What does the historical approval portfolio look like?
 - How do historical approval outcomes vary across product, income, credit-score, and DTI segments?
@@ -73,38 +74,39 @@ CreditWise AI combines these workflows into one application.
                     CREDIT APPLICATION DATA
                               │
                               ▼
-                    Python Data Quality / ETL
+                 Python Data Quality / ETL
                               │
                               ▼
                        PostgreSQL Layers
+                              │
                     RAW → STAGING → WAREHOUSE
                               │
                               ▼
                        SQL Analytics Layer
                               │
-              ┌───────────────┴───────────────┐
-              ▼                               ▼
-       Feature Engineering              Business Analytics
-              │
-              ▼
-        Model Training
-              │
-        ┌─────┴──────┐
-        ▼            ▼
-   Model Scoring   SHAP / XAI
-        │            │
-        └─────┬──────┘
-              ▼
-       Risk Simulation
-              │
-              ▼
-       Model Monitoring
-              │
-              ▼
-       Streamlit Dashboard
-              │
-              ▼
-       Gemini AI Risk Copilot
+                ┌─────────────┴─────────────┐
+                ▼                           ▼
+        Feature Engineering          Business Analytics
+                │
+                ▼
+          Model Training
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+   Model Scoring      SHAP / XAI
+        │                │
+        └───────┬────────┘
+                ▼
+          Risk Simulation
+                │
+                ▼
+          Model Monitoring
+                │
+                ▼
+         Streamlit Dashboard
+                │
+                ▼
+        Gemini AI Risk Copilot
 ```
 
 ---
@@ -139,7 +141,7 @@ The final enriched dataset contains:
 - Synthetic enrichment fields
 - Derived analytical features
 
-### Core source fields
+## Core source fields
 
 Examples include:
 
@@ -162,7 +164,7 @@ Examples include:
 - Email/work-phone indicators
 - Historical approval outcome
 
-### Synthetic enrichment fields
+## Synthetic enrichment fields
 
 The project adds demonstration fields including:
 
@@ -218,15 +220,15 @@ The database follows a layered architecture:
 
 ```text
 RAW
- ↓
+  ↓
 STAGING
- ↓
+  ↓
 WAREHOUSE
- ↓
+  ↓
 ANALYTICS
 ```
 
-### RAW
+## RAW
 
 ```text
 raw.credit_applications
@@ -234,7 +236,7 @@ raw.credit_applications
 
 Stores the enriched source-level data.
 
-### STAGING
+## STAGING
 
 ```text
 staging.credit_applications
@@ -242,7 +244,7 @@ staging.credit_applications
 
 Contains cleaned, trimmed, model-ready staging data.
 
-### WAREHOUSE
+## WAREHOUSE
 
 The warehouse uses a dimensional model:
 
@@ -253,7 +255,7 @@ dim_date
 fact_application
 ```
 
-### ANALYTICS
+## ANALYTICS
 
 Business-facing tables include:
 
@@ -283,7 +285,7 @@ SQL analysis covers:
 - Requested exposure
 - Applicant risk segments
 
-### Portfolio snapshot
+## Portfolio snapshot
 
 | Metric | Value |
 |---|---:|
@@ -324,7 +326,7 @@ Final processed feature count:
 77 features
 ```
 
-The saved preprocessing pipeline is:
+Saved preprocessing pipeline:
 
 ```text
 data/outputs/preprocessor.pkl
@@ -384,7 +386,7 @@ data/outputs/preprocessor.pkl
 
 SHAP is used to explain both global model behavior and individual predictions.
 
-### Global feature influence
+## Global feature influence
 
 Important features in the project include:
 
@@ -398,7 +400,7 @@ Important features in the project include:
 - Credit history months
 - Disposable income
 
-### Applicant-level explanation
+## Applicant-level explanation
 
 For an individual applicant, SHAP shows which features push the model toward the historical approval or non-approval class.
 
@@ -424,12 +426,12 @@ Credit score < 580
 Risk-indicator segments:
 
 ```text
-0 indicators  → Low Indicator
-1 indicator   → Moderate Indicator
-2+ indicators → High Indicator
+0 indicators   → Low Indicator
+1 indicator    → Moderate Indicator
+2+ indicators  → High Indicator
 ```
 
-### Hypothetical screening scenarios
+## Hypothetical screening scenarios
 
 ```text
 Broad Screening
@@ -487,45 +489,33 @@ High-level portfolio KPIs, historical approval outcomes, requested exposure, and
 
 Product, income, and DTI analysis with interactive Plotly charts.
 
-![Portfolio Analytics](docs/screenshots/03_portfolio_analytics.png)
+![Portfolio Analytics](docs/screenshots/02_portfolio_analytics.png)
 
 ## 3. Risk & Exposure
 
 Hypothetical risk segments, requested exposure, and screening scenarios.
 
-![Risk & Exposure](docs/screenshots/04_risk_exposure.png)
-
-![Hypothetical Risk Scenarios](docs/screenshots/05_risk_scenarios.png)
+![Risk & Exposure](docs/screenshots/03_risk_exposure.png)
 
 ## 4. Model Intelligence
 
 Model comparison, monitoring metrics, and global SHAP feature importance.
 
-![Model Comparison](docs/screenshots/06_model_comparison.png)
-
-![Model Monitoring and SHAP](docs/screenshots/07_model_monitoring_shap.png)
+![Model Intelligence](docs/screenshots/04_model_intelligence.png)
 
 ## 5. Applicant Risk Explorer
 
 Select an applicant and inspect the model's historical approval prediction and probability.
 
-![Applicant Prediction](docs/screenshots/08_applicant_prediction.png)
+![Applicant Risk Explorer](docs/screenshots/05_applicant_explorer.png)
 
-Applicant profile and hypothetical indicators:
-
-![Applicant Profile](docs/screenshots/09_applicant_profile.png)
-
-Applicant-level SHAP explanation:
-
-![Applicant SHAP Explanation](docs/screenshots/10_applicant_shap.png)
-
-![Applicant SHAP Details](docs/screenshots/11_applicant_shap_details.png)
+The full application also provides applicant profile details, hypothetical indicators, and applicant-level SHAP explanations.
 
 ## 6. AI Risk Copilot
 
-The dashboard includes an AI Risk Copilot that can answer natural-language questions using the project's actual applicant data, model output, risk indicators, and SHAP explanation.
+The dashboard includes an AI Risk Copilot that can answer natural-language questions using the project's applicant data, model output, risk indicators, and SHAP explanation.
 
-Example prompts include:
+Example prompts:
 
 ```text
 Why was this applicant predicted this way?
@@ -537,9 +527,7 @@ Summarize this applicant.
 Explain the model prediction.
 ```
 
-The Copilot is designed to explain the model rather than make real lending decisions.
-
-![AI Copilot Entry](docs/screenshots/02_dashboard_ai_copilot.png)
+The Copilot is designed to explain model outputs rather than make real lending decisions.
 
 ---
 
@@ -554,7 +542,7 @@ Applicant Record
       └── SHAP Explanation
               │
               ▼
-        Copilot Context Builder
+       Copilot Context Builder
               │
               ▼
           Gemini API
@@ -563,7 +551,7 @@ Applicant Record
      Natural-Language Explanation
 ```
 
-The Copilot prompt is designed to prevent unsupported claims and to maintain the project's distinction between historical approval, hypothetical risk indicators, and actual default/repayment risk.
+The Copilot prompt is designed to prevent unsupported claims and maintain the distinction between historical approval, hypothetical risk indicators, and actual default/repayment risk.
 
 ---
 
@@ -630,9 +618,13 @@ cd creditwise
 
 ## 2. Install dependencies
 
+If the repository contains `requirements.txt`:
+
 ```bash
 pip install -r requirements.txt
 ```
+
+Otherwise install the project's required Python packages for Streamlit, Pandas, NumPy, Scikit-learn, SHAP, Plotly, Joblib, python-dotenv, Google Gemini, and PostgreSQL connectivity.
 
 ## 3. Configure Gemini
 
