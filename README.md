@@ -8,20 +8,6 @@ The platform is designed around a fictional banking scenario in which analysts n
 
 ---
 
-## ⚠️ Important Data & Risk Disclaimer
-
-This is a portfolio / demonstration project.
-
-- `approved` represents a **historical approval outcome**, not loan default or repayment.
-- The dataset does **not** contain an actual repayment/default target.
-- Risk segments and policy scenarios are **hypothetical simulations**.
-- Several fields were synthetically enriched for demonstration and are explicitly marked as synthetic.
-- SHAP values describe model influence, not causation.
-- Model probabilities are not calibrated real-world lending probabilities.
-- The application is not intended to make actual lending decisions.
-
----
-
 # 🖥️ Dashboard Screenshots
 
 Selected screenshots from the working CreditWise AI Streamlit application.
@@ -46,9 +32,6 @@ Selected screenshots from the working CreditWise AI Streamlit application.
 
 ![Applicant Risk Explorer](docs/screenshots/05_applicant_explorer.png)
 
-> These are selected representative screenshots. Additional dashboard views are available when the Streamlit application is run locally.
-
----
 
 # 🎯 Business Problem
 
