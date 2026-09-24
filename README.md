@@ -8,9 +8,23 @@ The platform is designed around a fictional banking scenario in which analysts n
 
 ---
 
+## ⚠️ Important Data & Risk Disclaimer
+
+This is a portfolio / demonstration project.
+
+- `approved` represents a **historical approval outcome**, not loan default or repayment.
+- The dataset does **not** contain an actual repayment/default target.
+- Risk segments and policy scenarios are **hypothetical simulations**.
+- Several fields were synthetically enriched for demonstration and are explicitly marked as synthetic.
+- SHAP values describe model influence, not causation.
+- Model probabilities are not calibrated real-world lending probabilities.
+- The application is not intended to make actual lending decisions.
+
+---
+
 # 🖥️ Dashboard Screenshots
 
-Selected screenshots from the working CreditWise AI Streamlit application.
+Selected screenshots from the working CreditWise AI Streamlit application. This is the **only screenshot gallery in this README**; the sections below describe the dashboard modules without repeating these images.
 
 ### Executive Dashboard
 
@@ -18,7 +32,6 @@ Selected screenshots from the working CreditWise AI Streamlit application.
 
 ### Portfolio Analytics
 
-![Portfolio Analytics](docs/screenshots/02_portfolio_analytics.png)
 
 ### Risk & Exposure Intelligence
 
@@ -26,12 +39,13 @@ Selected screenshots from the working CreditWise AI Streamlit application.
 
 ### Model Intelligence
 
-![Model Intelligence](docs/screenshots/04_model_intelligence.png)
 
 ### Applicant Risk Explorer
 
-![Applicant Risk Explorer](docs/screenshots/05_applicant_explorer.png)
 
+> These are selected representative screenshots. Additional dashboard views are available when the Streamlit application is run locally.
+
+---
 
 # 🎯 Business Problem
 
@@ -464,39 +478,34 @@ The Streamlit application contains six major areas.
 
 ## 1. Executive Dashboard
 
-High-level portfolio KPIs, historical approval outcomes, requested exposure, and hypothetical risk-segment distribution.
-
-![Executive Dashboard](docs/screenshots/01_executive_dashboard.png)
+Provides high-level portfolio KPIs, historical approval outcomes, requested exposure, and hypothetical risk-segment distribution.
 
 ## 2. Portfolio Analytics
 
-Product, income, and DTI analysis with interactive Plotly charts.
-
-![Portfolio Analytics](docs/screenshots/02_portfolio_analytics.png)
+Provides interactive analysis of product distribution, historical approval rates, income bands, and DTI bands.
 
 ## 3. Risk & Exposure
 
-Hypothetical risk segments, requested exposure, and screening scenarios.
-
-![Risk & Exposure](docs/screenshots/03_risk_exposure.png)
+Provides hypothetical risk segments, requested exposure analysis, and hypothetical screening scenarios.
 
 ## 4. Model Intelligence
 
-Model comparison, monitoring metrics, and global SHAP feature importance.
-
-![Model Intelligence](docs/screenshots/04_model_intelligence.png)
+Provides model comparison, baseline monitoring metrics, and global SHAP feature importance.
 
 ## 5. Applicant Risk Explorer
 
-Select an applicant and inspect the model's historical approval prediction and probability.
+Allows an analyst to select an applicant and inspect:
 
-![Applicant Risk Explorer](docs/screenshots/05_applicant_explorer.png)
-
-The full application also provides applicant profile details, hypothetical indicators, and applicant-level SHAP explanations.
+- Historical approval probability
+- Predicted historical outcome
+- Applicant profile
+- Hypothetical risk indicators
+- Risk-indicator segment
+- Applicant-level SHAP explanation
 
 ## 6. AI Risk Copilot
 
-The dashboard includes an AI Risk Copilot that can answer natural-language questions using the project's applicant data, model output, risk indicators, and SHAP explanation.
+Provides natural-language interaction with applicant and model information using Gemini.
 
 Example prompts:
 
@@ -511,6 +520,8 @@ Explain the model prediction.
 ```
 
 The Copilot is designed to explain model outputs rather than make real lending decisions.
+
+> **Screenshot note:** The representative dashboard screenshots are shown once in the **Dashboard Screenshots** section near the top of this README to keep the page clean and avoid duplication.
 
 ---
 
