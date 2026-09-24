@@ -24,7 +24,7 @@ This is a portfolio / demonstration project.
 
 # 🖥️ Dashboard Screenshots
 
-Selected screenshots from the working CreditWise AI Streamlit application. This is the **only screenshot gallery in this README**; the sections below describe the dashboard modules without repeating these images.
+Selected screenshots from the working CreditWise AI Streamlit application.
 
 ### Executive Dashboard
 
@@ -32,6 +32,7 @@ Selected screenshots from the working CreditWise AI Streamlit application. This 
 
 ### Portfolio Analytics
 
+![Portfolio Analytics](docs/screenshots/02_portfolio_analytics.png)
 
 ### Risk & Exposure Intelligence
 
@@ -39,8 +40,11 @@ Selected screenshots from the working CreditWise AI Streamlit application. This 
 
 ### Model Intelligence
 
+![Model Intelligence](docs/screenshots/04_model_intelligence.png)
 
 ### Applicant Risk Explorer
+
+![Applicant Risk Explorer](docs/screenshots/05_applicant_explorer.png)
 
 
 > These are selected representative screenshots. Additional dashboard views are available when the Streamlit application is run locally.
