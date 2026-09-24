@@ -6,19 +6,6 @@ CreditWise AI is an end-to-end portfolio project that transforms credit-applicat
 
 The platform is designed around a fictional banking scenario in which analysts need to understand **historical approval outcomes**, investigate applicant-level model predictions, explore hypothetical risk indicators, monitor model performance, and interact with model outputs using an AI Risk Copilot.
 
----
-
-## ⚠️ Important Data & Risk Disclaimer
-
-This is a portfolio / demonstration project.
-
-- `approved` represents a **historical approval outcome**, not loan default or repayment.
-- The dataset does **not** contain an actual repayment/default target.
-- Risk segments and policy scenarios are **hypothetical simulations**.
-- Several fields were synthetically enriched for demonstration and are explicitly marked as synthetic.
-- SHAP values describe model influence, not causation.
-- Model probabilities are not calibrated real-world lending probabilities.
-- The application is not intended to make actual lending decisions.
 
 ---
 
