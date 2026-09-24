@@ -1,0 +1,7 @@
+Metric,Value,Status
+Accuracy,0.75375,Available
+Precision,0.6654445462878094,Available
+Recall,0.7626050420168067,Available
+F1,0.71071953010279,Available
+ROC_AUC,0.8485088096011887,Available
+PR_AUC,0.7921093998956631,Available

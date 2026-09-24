@@ -1,0 +1,78 @@
+Feature,Feature_Value,SHAP_Value,Direction
+cat__income_type_Working,1.0,0.4146593882766599,Toward historical approval
+num__debt_to_income_ratio,-0.5452807920095223,0.3236819106570268,Toward historical approval
+num__dti_percent,-0.5452807920095221,0.3236819106570262,Toward historical approval
+num__existing_credit_lines,-1.1899464333222738,0.3025877152242456,Toward historical approval
+num__disposable_income,0.7767733647366364,0.2583872187360734,Toward historical approval
+cat__own_property_N,0.0,0.2072668616542068,Toward historical approval
+num__years_employed,0.5483922447410462,0.20325326907099733,Toward historical approval
+num__monthly_expenses,-0.562723168540992,-0.18093154771013578,Toward historical non-approval
+num__credit_score,-1.6421419950830336,-0.16484485791407436,Toward historical non-approval
+num__monthly_debt_obligation,-0.4081477966625275,-0.15026549728729752,Toward historical non-approval
+num__credit_history_months,-0.4448617149592869,-0.13608832103703153,Toward historical non-approval
+cat__own_property_Y,1.0,0.1259160713573073,Toward historical approval
+cat__income_type_Commercial associate,0.0,-0.12219205990961808,Toward historical non-approval
+cat__own_car_N,1.0,-0.09684796783385569,Toward historical non-approval
+num__exposure_to_income,-0.806405418904459,-0.09547925899481231,Toward historical non-approval
+cat__income_type_State servant,0.0,-0.08900315850531423,Toward historical non-approval
+cat__income_type_Student,0.0,0.08573322931499307,Toward historical approval
+cat__family_status_Married,1.0,0.08159341298859178,Toward historical approval
+cat__product_type_Personal Loan,1.0,-0.08077753379328562,Toward historical non-approval
+cat__application_channel_Mobile App,1.0,-0.07882386217527845,Toward historical non-approval
+num__current_credit_balance,-0.8240202727437447,-0.07333617068476524,Toward historical non-approval
+cat__gender_M,0.0,0.05759887797152565,Toward historical approval
+cat__product_type_Credit Card,0.0,0.0561540651208173,Toward historical approval
+num__current_credit_limit,-0.948895243082003,0.053138678320543045,Toward historical approval
+num__total_outstanding_debt,-0.46327127759654513,0.04148724838132478,Toward historical approval
+num__disposable_income_ratio,1.36511443029463,-0.03759538490498433,Toward historical non-approval
+cat__occupation_type_Unknown,1.0,0.03394253752720191,Toward historical approval
+cat__gender_F,1.0,-0.032546592357469636,Toward historical non-approval
+cat__application_purpose_Education,0.0,0.02930765436861823,Toward historical approval
+cat__occupation_type_Managers,0.0,-0.026106378489544155,Toward historical non-approval
+cat__education_type_Secondary,1.0,-0.026088173543526143,Toward historical non-approval
+num__total_credit_exposure,-0.6276134383529826,0.02414362486848486,Toward historical approval
+num__has_work_phone,1.3852148967307054,-0.019941454670702293,Toward historical non-approval
+cat__housing_type_Rented apartment,0.0,0.019397564980643284,Toward historical approval
+cat__application_purpose_Debt Consolidation,1.0,-0.018805125196642937,Toward historical non-approval
+num__age,0.5872616882505669,0.018202924276481392,Toward historical approval
+cat__family_status_Civil marriage,0.0,0.017634967402206974,Toward historical approval
+num__has_email,0.7207414141943371,-0.01746776180270034,Toward historical non-approval
+cat__own_car_Y,0.0,-0.017334469863289972,Toward historical non-approval
+num__utilization_percent,-0.45864804089707495,0.017294471025705332,Toward historical approval
+num__credit_utilization_ratio,-0.45864804089707456,0.017294471025704788,Toward historical approval
+cat__application_purpose_General Spending,0.0,0.01647637800924277,Toward historical approval
+cat__application_channel_Branch,0.0,0.015566637868369829,Toward historical approval
+cat__family_status_Single / not married,0.0,0.01374485673356766,Toward historical approval
+cat__housing_type_House / apartment,0.0,0.01273907184689434,Toward historical approval
+cat__application_purpose_Emergency Expense,0.0,0.01265712505954979,Toward historical approval
+cat__occupation_type_Medicine staff,0.0,0.012060444251496607,Toward historical approval
+cat__application_purpose_Travel,0.0,-0.011635704162568214,Toward historical non-approval
+num__late_payments_24m,-0.1535448037761068,0.011540830221478154,Toward historical approval
+cat__occupation_type_Sales staff,0.0,0.01119425256762123,Toward historical approval
+cat__family_status_Separated,0.0,0.009844619505342397,Toward historical approval
+num__num_children,-0.7454046003981261,-0.009452305638167312,Toward historical non-approval
+num__annual_income,-0.09435184267160371,-0.007729354156124006,Toward historical non-approval
+cat__education_type_Incomplete higher,0.0,0.007689937118873233,Toward historical approval
+cat__application_channel_Web,0.0,0.007345468216493067,Toward historical approval
+num__family_size,-0.3639117270486074,-0.006681877259458865,Toward historical non-approval
+cat__occupation_type_Drivers,0.0,0.006488032689163911,Toward historical approval
+cat__occupation_type_Accountants,0.0,-0.006161712719775007,Toward historical non-approval
+cat__income_type_Pensioner,0.0,-0.005834794683935107,Toward historical non-approval
+cat__housing_type_With parents,0.0,0.005714929765404834,Toward historical approval
+cat__occupation_type_High skill tech staff,0.0,0.005530605522683645,Toward historical approval
+cat__family_status_Widow,0.0,0.00504586681214938,Toward historical approval
+cat__education_type_Higher education,0.0,0.003944692205171794,Toward historical approval
+num__requested_limit_to_income,0.12063034804214125,0.003316624335978816,Toward historical approval
+cat__occupation_type_Security staff,0.0,0.0031091618306543604,Toward historical approval
+cat__occupation_type_Core staff,0.0,-0.0026638489448530954,Toward historical non-approval
+cat__education_type_Academic degree,0.0,0.002475312425361698,Toward historical approval
+cat__occupation_type_Unemployed,0.0,0.0023292027046106626,Toward historical approval
+cat__occupation_type_Laborers,0.0,-0.002165976937706018,Toward historical non-approval
+cat__housing_type_Municipal apartment,1.0,0.002040335810958211,Toward historical approval
+num__requested_credit_limit,0.5758745721695276,0.0015439267489510454,Toward historical approval
+cat__housing_type_Co-op apartment,0.0,0.0009075997072216305,Toward historical approval
+cat__education_type_Lower secondary,0.0,0.0008755709812873094,Toward historical approval
+cat__application_channel_Partner,0.0,0.0007823168724701006,Toward historical approval
+cat__occupation_type_Cooking staff,0.0,-0.000756597871082995,Toward historical non-approval
+cat__product_type_Credit Line,0.0,0.0007054895674522706,Toward historical approval
+cat__own_car_Unknown,0.0,0.0,Toward historical non-approval

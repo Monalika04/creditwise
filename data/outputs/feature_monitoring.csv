@@ -1,0 +1,7 @@
+Feature,Mean,Median,Missing
+credit_score,654.0671666666667,654.0,0
+debt_to_income_ratio,0.22838025,0.227,0
+credit_utilization_ratio,0.22252104166666664,0.2192,0
+annual_income,54987.88333333333,49400.0,0
+years_employed,5.208024999999999,3.4,0
+late_payments_24m,0.048666666666666664,0.0,0
